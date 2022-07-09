@@ -36,8 +36,8 @@ $router->get('/contacto', [PaginasController::class, 'contacto']);
 $router->post('/contacto', [PaginasController::class, 'contacto']);
 
 // Login y Autenticación
-$router->get('/login', [LoginController::class, 'login']); // Para mostrar el formulario
-$router->post('/login', [LoginController::class, 'login']); // Para enviar datos al formulario 
+$router->get('/login', [LoginController::class, 'login']); // Para mostrar el formulario de autenticación para el ingreso
+$router->post('/login', [LoginController::class, 'login']); // Para enviar datos al formulario
 $router->get('/logout', [LoginController::class, 'logout']); // Para cerrar sesión
 
 $router->comprobarRutas();
